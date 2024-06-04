@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Resources</title>
+    <link rel="stylesheet" href=styleh.css">
+
+    
+</head>
+<body>
+    <header>
+        <nav>
+           <a href="homepage.html"><img src="edulogo.png"></a>
+           <div class="searchbar">
+             <input type="text" placeholder="search" align="Center">
+            </div>
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">cources</a>
+                <a href="#">Contact</a>
+              </div>
+              
+              <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+                <h2>Collapsed Sidebar</h2>
+                <p>Content...</p>
+              </div>
+              
+        </nav>
+    </header>
+    
+    <main>
+        <section id="notes">
+            <h2>Lecture Notes</h2>
+            <ul>
+                <li><a href="notes/note1.pdf" download>Note 1</a></li>
+                <li><a href="notes/note2.pdf" download>Note 2</a></li>
+                <li><a href="notes/note3.pdf" download>Note 3</a></li>
+            </ul>
+        </section>
+        
+        <section id="pdfs">
+            <h2>PDF Resources</h2>
+            <ul>
+                <li><a href="pdfs/resource1.pdf" download>Resource 1</a></li>
+                <li><a href="pdfs/resource2.pdf" download>Resource 2</a></li>
+                <li><a href="pdfs/resource3.pdf" download>Resource 3</a></li>
+            </ul>
+        </section>
+        <div class="container">
+                <form>
+              
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name..">
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+            
+        </div>
+        <script>
+                function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+                }
+
+
+                function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                 document.getElementById("main").style.marginLeft = "0";
+                   }
+        </script>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Student Resource Center. All rights reserved.</p>
+    </footer>
+</body>
+</html>

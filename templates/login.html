@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="{{ url_for('login') }}" method="POST">
+            <label for="email">Email</label>
+            <input pattern=".+@vemanait.edu.in" placeholder="student-ID" type="email" id="email" name="email" required><br/>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="password" name="password" required><br/>
+            <button type="submit">Sign In</button>
+            <a href="#" class="forgot-password">Forgot Password</a>
+        </form>
+    </div>
+</body>
+</html>
